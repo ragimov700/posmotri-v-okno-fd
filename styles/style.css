@@ -85,7 +85,9 @@ ol {
   flex-direction: column;
   gap: 30px;
   overflow-y: auto;
+  overflow-x: hidden;
   height: 298px;
+  max-width: 390px;
 }
 
 .result__video-container {
@@ -113,6 +115,15 @@ ol {
 }
 .content__video-card-description-container {
   flex-grow: 1;
+  min-width: 0;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
@@ -120,4 +131,42 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  min-width: 259px;
+  min-height: 210px;
+  margin-bottom: 26px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
