@@ -223,7 +223,7 @@ ol {
 .search-form__pseudo-checkbox {
   border: none;
   padding: 1px;
-  
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -283,6 +283,7 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
